@@ -1,0 +1,8 @@
+sudo apt-get update
+sudo apt-get install -y apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2
+echo "<html><body><h1>Apache2 Web Server is running on GCP VM</h1><body><html>" | sudo tee /var/www/html/index.html
+
+
+--This is gcp vm startup script --
